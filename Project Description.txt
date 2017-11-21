@@ -1,0 +1,11 @@
+The project is written in Python and R.
+Python handles parsing data from spreadsheets raw data.
+R Shiny handles visualization functions.
+In Python part, there are two folders. Module includes database functions.
+FileTools includes data processing functions.
+In R part, there are two folders, which are Visualization Tool and Shiny Gene Tool.
+They are two different apps.
+Since I can't disclose the data I have been working on, so I made up the dataset.
+Under B_DNA data folder, each folder represents a single experiment. The names of
+the folders are the format of the original dataset. Parsing those strings to design
+and create a MySQL database was a big part of this project.
