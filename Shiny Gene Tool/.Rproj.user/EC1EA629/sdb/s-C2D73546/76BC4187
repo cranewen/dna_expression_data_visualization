@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(plotly)\n\nshinyUI(fluidPage(\n  sidebarLayout(\n    sidebarPanel(\n      fluidRow(\n      \n        wellPanel(\n          selectizeInput(inputId = 'description', label = 'Please select a description', \n                         choices = NULL, options = list(create = FALSE)),\n          uiOutput(\"select1\"),\n          uiOutput(\"select2\"),\n          actionButton(\"barchart\", label = \"Bar Chart & Box Plot\"),\n          actionButton(\"hmap\", label = \"Heatmap\"),\n          actionButton(\"hmap2\", label = \"Pairwise Heatmap\"),\n          actionButton(\"csvtable\", label = \"Update Data Table\"),\n          downloadButton(\"csvdownload\", label = \"Download Data CSV\")\n        )\n      )\n      \n    ),\n    \n    mainPanel(\n\n      tabsetPanel(\n        tabPanel(\"Heatmap\", plotlyOutput(\"heatmap\", width = \"100%\", height = \"100%\")),\n        tabPanel(\"Bar Chart\", plotlyOutput(\"barchartExp\", width = 1000, height = 600)),\n        tabPanel(\"Box Plot\", plotOutput(\"boxplot\")),\n        tabPanel(\"Data Table\", tableOutput(\"csvTable\")),\n        tabPanel(\"ANOVA\", dataTableOutput(\"ANOVA_results\"))\n      )\n      # tableOutput(\"csvTable\")\n    )\n  )\n))",
+    "created" : 1503501201764.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2116249847",
+    "id" : "76BC4187",
+    "lastKnownWriteTime" : 1503682247,
+    "last_content_update" : 1503682247874,
+    "path" : "C:/Users/ywen/OneDrive - Ironwood Pharmaceuticals/B_DNA Project/B_DNA_Webapp/R Shiny/test/ui.R",
+    "project_path" : null,
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

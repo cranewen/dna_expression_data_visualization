@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shiny)\nlibrary(RMySQL)\nlibrary(DBI)\nlibrary(dplyr)\nlibrary(pool)\n\nmysqldbpool <- dbPool(\n  RMySQL::MySQL(),\n  dbname = \"b_dna\",\n  host = \"172.20.203.118\",\n  username = \"ironwood\",\n  password = \"irtest\"\n)\n\ngene <- data.frame(mysqldbpool %>% tbl(\"gene\")) \ncondition <- data.frame(mysqldbpool %>% tbl(\"condition\"))\nexperiment <- data.frame(mysqldbpool %>% tbl(\"experiment\"))\ngene_expression <- data.frame(mysqldbpool %>% tbl(\"gene_expression\"))\n",
+    "created" : 1503325305891.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "416580194",
+    "id" : "9BB7EF33",
+    "lastKnownWriteTime" : 1503689156,
+    "last_content_update" : 1503689156085,
+    "path" : "C:/Users/ywen/OneDrive - Ironwood Pharmaceuticals/B_DNA Project/B_DNA_Webapp/Shiny Gene Tool/global.R",
+    "project_path" : "global.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1503411133382.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "3C03493D",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1503411133382,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "5F4FDA72",
+        "caption" : "barChatTestDat",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=barChatTestDat&cache_key=5F4FDA72",
+        "displayedObservations" : 54426,
+        "environment" : "",
+        "object" : "barChatTestDat",
+        "preview" : 0,
+        "totalObservations" : 54426,
+        "variables" : 13
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
